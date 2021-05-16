@@ -1,0 +1,370 @@
+*{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+*::selection{
+    background:rgb(231, 231, 231);
+    color:blueviolet;
+}
+
+.popup{
+    width:100%;
+    min-height:100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+}
+.popup .popupreg{
+    margin:40px auto 0px auto;
+    width:500px;
+    height: 450px;
+    padding:10px; 
+    background-color: #ffffff;
+    border-radius:15px;
+}
+.popup .popeditArt{
+    margin:40px auto 0px auto;
+    width:900px;
+    height: 100%;
+    padding:10px; 
+    background-color: #ffffff;
+    border-radius:15px;
+}
+
+.popup .popdelArt{
+    margin:40px auto 0px auto;
+    width:700px;
+    height: 300px;
+    padding:10px; 
+    background-color: #ffffff;
+    border-radius:15px;
+}
+
+.popup .popupin{
+    margin:40px auto 0px auto;
+    width:500px;
+    height: 375px;
+    padding:10px; 
+    background-color: #ffffff;
+    border-radius:15px;
+}
+
+.popup .popArt{
+    margin:40px auto 0px auto;
+    width: 900px;
+    height: 100%;
+    padding:10px; 
+    background-color: #ffffff;
+    border-radius:15px;
+}
+
+.popup .popupsect{
+    margin:40px auto 0px auto;
+    width:500px;
+    height: 275px;
+    padding:10px; 
+    background-color: #ffffff;
+    border-radius:15px;
+}
+
+h1.main {
+  font-size: 230%;
+  margin: 30px 15%;
+}
+p.info {
+    line-height: 135%;
+    font-size: 150%;
+    color: rgb(158, 157, 157);
+     margin: 20px 15%; 
+
+}
+
+ul.inout{    
+    text-align: right; /*список размещён справа*/
+}
+
+ul.inout > li > a{
+    color:rgb(158, 157, 157);
+    font-size: 25px;
+    margin: 0px;
+    text-decoration: none;
+}
+
+ul.inout > li > a:hover{
+    color:black;
+    
+    border-radius: 0px; 
+    padding: 10px 0px;
+    box-shadow: 0px 3px 0px rgb(107, 142, 35);
+    transition: .4s; /*длительность анимации*/
+}
+
+ul.inout > li{
+    list-style: none;
+    margin: 20px;
+}
+
+
+ul.ulist > li{
+    font-size: 150%;
+    color: rgb(158, 157, 157);
+    margin: 10px 15%;
+    list-style: none;
+}
+
+
+
+ul.menu{    
+text-align: center; /*список размещён в центре*/
+}
+
+ul.menu > li {
+  font-size: 25px;
+  margin: 20px;
+
+display: inline-block; /*горизонтальное размещение содержимого списка*/
+list-style: none; /*отсутствие значков у элемента списка*/
+
+}
+
+
+
+ul.ulist > li::first-letter {
+font-weight: bold;   
+color: black; 
+}
+
+
+ul.menu > li > a{
+  color:rgb(158, 157, 157);
+  padding: 20px 1px;
+    
+text-decoration:none;
+}
+
+
+
+ul.menu > li > a:hover{
+    color:black;
+    padding: 20px 1px;
+    border-radius: 0px; 
+    text-decoration: none;
+    box-shadow: 0 5px 0 rgb(107, 142, 35);
+    transition: .4s; /*длительность анимации*/
+  
+}
+
+ img.info {
+    margin: 20px 25% 20px 25%;
+
+} 
+/* .article img {
+    margin: 150px 150px;
+   
+} */
+
+ .reg > input[type=text] {
+    margin:  10px 0px;
+    width: 500px;
+   border: 2px inset  rgb(107, 142, 35); 
+   border-radius: 3px; 
+    
+   outline: none;
+   height: 50px; 
+   padding: 10px;
+   color: #000000; 
+   font-size: 20px;
+}
+
+.popArt > input[type=text], .popeditArt > input[type=text] {
+    margin:  5px 0px;
+    width: inherit;
+   border: 2px inset  rgb(107, 142, 35); 
+   border-radius: 3px; 
+    
+   outline: none;
+   height: 50px; 
+   padding: 10px;
+   color: #000000; 
+   font-size: 20px;
+}
+
+.popArt > input[type=text]:focus, .reg > input[type=text]:focus, .popeditArt > input[type=text]:focus {
+   border: 3px inset  rgb(107, 142, 35);
+   background-color: rgb(231, 231, 231); 
+   
+}
+.popArt > select, .popeditArt>select {
+    margin:  10px 0px;
+    width: inherit;
+   border: 2px inset  rgb(107, 142, 35); 
+   border-radius: 3px; 
+    
+   outline: none;
+   height: 50px; 
+   padding: 10px;
+   color: #000000; 
+   font-size: 20px;
+}
+.reg > p {
+
+  text-align: center;  
+  font-size: 25px;
+  color:rgb(158, 157, 157);
+}
+
+
+ .but input[type=submit] {
+    width: 300px;
+    height: 50px;
+    font-size: 25px;
+    color: #000000;
+    background-color: #FFFFFF;
+    border: 2px outset  rgb(107, 142, 35); 
+    margin: 10px 0px;
+}
+
+.but  input[type=submit]:hover {
+   
+    border: 4px outset  rgb(107, 142, 35); 
+    background-color:  rgb(247, 247, 247);
+}  
+.errors {
+    font-size: 25px;
+    color:salmon;
+}
+
+.fine {
+    font-size: 25px;
+    color:springgreen;
+}
+
+.hello {
+    font-size: 25px;
+    color:  rgb(158, 157, 157);
+}
+
+ul.menu > li > input[type=submit]{
+    color:rgb(158, 157, 157);
+    padding: 20px 1px;
+    background: white;
+    border-color: white;
+    border-radius: 0px;
+    text-decoration:none;
+    font-size: 25px;
+    border-width: 0px;
+   
+    
+}
+
+ul.menu > li > input[type=submit]:hover{
+    color:black;
+    padding: 20px 1px;
+    border-radius: 0px; 
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 5px 0 rgb(107, 142, 35);
+    transition: .4s; /*длительность анимации*/
+  
+}
+
+.about {
+font-size: 20px;
+color:   rgb(158, 157, 157);
+font-weight: normal;
+margin: 20px 15%;
+
+}
+
+.textarticle  {
+    color:   rgb(158, 157, 157);
+    font-size: 27px;
+    font-weight: normal;
+    margin: 20px 15%;
+}
+
+.about input[type=submit]{
+
+    color:rgb(107, 142, 35);
+    padding: 20px 1px;
+    background: white;
+    border-color: white;
+    border-radius: 0px;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 20px;
+    border-width: 0px;
+}
+
+
+.about input[type=submit]:hover{ 
+    color:blueviolet;
+    text-decoration: blink;
+}
+
+.main_name{
+color:rgb(107, 142, 35);
+}
+
+h1.title {
+    font-size: 230%;
+  margin: 0px 15%;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.foot {
+    font-size: 25px;
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height:3%;
+    text-align:center;
+    border-color: black;
+    background-color: rgb(231, 231, 231) ;
+    color:rgb(107, 142, 35);
+}
+
+.textarticle p {
+
+    color: rgb(158, 157, 157);
+   display: block;
+    
+}
+
+a:link {
+    color:rgb(107, 142, 35);
+}
+
+
+a:visited {
+    color: black;
+}
+a:hover {
+    color: blueviolet;
+}
+
+button.active > a {
+    padding: 20px 1px;
+    border-radius: 0px; 
+    text-decoration: none;
+    box-shadow: 0 2px 0 rgb(158, 157, 157)
+    
+}
+
+input[type=submit].active{
+    color:rgb(158, 157, 157);
+    padding: 20px 1px;
+    background: white;
+    border-color: white;
+    border-radius: 0px;
+    text-decoration:none;
+    font-size: 25px;
+    border-width: 0px;
+    text-decoration: none;
+    box-shadow: 0 2px 0 rgb(158, 157, 157);
+    
+    
+}
